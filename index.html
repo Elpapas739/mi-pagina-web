@@ -3,92 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos Amazon</title>
+    <title>Los Mejores Productos de Amazon</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: url('https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg') no-repeat center center fixed;
-            background-size: cover;
+            background: linear-gradient(to right, #141e30, #243b55);
             text-align: center;
             color: white;
+            margin: 0;
+            padding: 0;
         }
         .container {
-            background-color: rgba(255, 136, 0, 0.9);
             padding: 20px;
-            border-radius: 10px;
-            display: inline-block;
-            margin-top: 50px;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        .productos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
         .producto {
             background: white;
             padding: 15px;
-            border-radius: 8px;
-            margin: 10px;
-            display: inline-block;
+            border-radius: 12px;
+            width: 220px;
             text-align: center;
             color: black;
-            width: 200px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .producto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
         }
         img {
-            width: 150px;
+            width: 180px;
             height: auto;
+            border-radius: 8px;
         }
         a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: #ff8800;
+            color: white;
             text-decoration: none;
-            color: #ff8800;
             font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
         }
         a:hover {
-            color: #cc5500;
+            background: #cc5500;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Productos Recomendados</h1>
-
-        <div class="producto">
-            <img src="https://m.media-amazon.com/images/I/61CiqVTRBEL._AC_SL1500_.jpg" alt="Mouse">
-            <h2>Mouse Inalámbrico</h2>
-            <p>Ligero, silencioso, recargable</p>
-            <a href="https://www.amazon.com/dp/B07GBZ4Q68" target="_blank">Ver en Amazon</a>
+        <h1>Los Mejores Productos de Amazon</h1>
+        <div class="productos">
+            <div class="producto">
+                <img src="https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_SL1500_.jpg" alt="Mouse Inalámbrico">
+                <h2>Mouse Inalámbrico</h2>
+                <p>Ligero, silencioso, recargable</p>
+                <a href="https://www.amazon.com/dp/B07GBZ4Q68?tag=tiendaofert0a-21" target="_blank">Ver en Amazon</a>
+            </div>
+            <div class="producto">
+                <img src="https://m.media-amazon.com/images/I/51eB3552MML._AC_SL1500_.jpg" alt="Audífonos Sony">
+                <h2>Audífonos Sony</h2>
+                <p>Cancelación de ruido, Bluetooth</p>
+                <a href="https://www.amazon.com/dp/B07KKMGG6H?tag=tiendaofert0a-21" target="_blank">Ver en Amazon</a>
+            </div>
+            <div class="producto">
+                <img src="https://m.media-amazon.com/images/I/71FSIp+tDNL._AC_SL1500_.jpg" alt="Teclado Mecánico RGB">
+                <h2>Teclado Mecánico RGB</h2>
+                <p>Mecánico, retroiluminado</p>
+                <a href="https://www.amazon.com/dp/B016MAK38U?tag=tiendaofert0a-21" target="_blank">Ver en Amazon</a>
+            </div>
+            <div class="producto">
+                <img src="https://m.media-amazon.com/images/I/613nJ0fcAnL._AC_SL1448_.jpg" alt="Memoria USB 128GB">
+                <h2>Memoria USB 128GB</h2>
+                <p>Alta velocidad, compacta</p>
+                <a href="https://www.amazon.com/-/es/SanDisk-memoria-velocidad-SDCZ73-128G-G46-Stromboli/dp/B087YQHK77?tag=tiendaofert0a-21" target="_blank">Ver en Amazon</a>
+            </div>
+            <div class="producto">
+                <img src="https://m.media-amazon.com/images/I/51agrfaoWhL._AC_SL1500_.jpg" alt="Lámpara LED Escritorio">
+                <h2>Lámpara LED Escritorio</h2>
+                <p>Regulable, carga USB</p>
+                <a href="https://www.amazon.com/-/es/escritorio-regulable-iluminaci%C3%B3n-temporizador-autom%C3%A1tico/dp/B0DGGG9LR9?tag=tiendaofert0a-21" target="_blank">Ver en Amazon</a>
+            </div>
+            <div class="producto">
+                <img src="https://m.media-amazon.com/images/I/71OzaJEoxHL._AC_SL1200_.jpg" alt="Mochila Antirrobo">
+                <h2>Mochila Antirrobo</h2>
+                <p>Impermeable, carga USB</p>
+                <a href="https://www.amazon.com/-/es/antirrobo-port%C3%A1til-compatible-pulgadas-incluido/dp/B07S6N5RSW?tag=tiendaofert0a-21" target="_blank">Ver en Amazon</a>
+            </div>
         </div>
-
-        <div class="producto">
-            <img src="https://m.media-amazon.com/images/I/81KkrQWEHIL._AC_SL1500_.jpg" alt="Audífonos">
-            <h2>Audífonos Sony</h2>
-            <p>Cancelación de ruido, Bluetooth</p>
-            <a href="https://www.amazon.com/dp/B08R5TGCM3" target="_blank">Ver en Amazon</a>
-        </div>
-
-        <div class="producto">
-            <img src="https://m.media-amazon.com/images/I/71vFKBpKakL._AC_SL1500_.jpg" alt="Teclado">
-            <h2>Teclado RGB</h2>
-            <p>Mecánico, retroiluminado</p>
-            <a href="https://www.amazon.com/dp/B07GBZ4Q68" target="_blank">Ver en Amazon</a>
-        </div>
-
-        <div class="producto">
-            <img src="https://m.media-amazon.com/images/I/51xF9wb2GWL._AC_SL1500_.jpg" alt="USB">
-            <h2>Memoria USB 128GB</h2>
-            <p>Alta velocidad, compacta</p>
-            <a href="https://www.amazon.com/dp/B08GY8NH78" target="_blank">Ver en Amazon</a>
-        </div>
-
-        <div class="producto">
-            <img src="https://m.media-amazon.com/images/I/61CiqVTRBEL._AC_SL1500_.jpg" alt="Lámpara">
-            <h2>Lámpara LED Escritorio</h2>
-            <p>Regulable, carga USB</p>
-            <a href="https://www.amazon.com/dp/B09GY3N5VC" target="_blank">Ver en Amazon</a>
-        </div>
-
-        <div class="producto">
-            <img src="https://m.media-amazon.com/images/I/61h2xxrVccL._AC_SL1500_.jpg" alt="Mochila">
-            <h2>Mochila Antirrobo</h2>
-            <p>Impermeable, carga USB</p>
-            <a href="https://www.amazon.com/dp/B07X2LQRC5" target="_blank">Ver en Amazon</a>
-        </div>
-
     </div>
 </body>
 </html>
